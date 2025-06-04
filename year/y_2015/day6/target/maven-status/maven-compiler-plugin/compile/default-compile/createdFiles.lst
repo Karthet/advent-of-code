@@ -1,0 +1,12 @@
+de/raphael/advent/year/y_2015/day6/parts/BasePart$1.class
+de/raphael/advent/year/y_2015/day6/common/Instruction$InstructionBuilder.class
+de/raphael/advent/year/y_2015/day6/common/Instruction.class
+de/raphael/advent/year/y_2015/day6/common/BrightnessLighting.class
+de/raphael/advent/year/y_2015/day6/parts/Part1.class
+de/raphael/advent/year/y_2015/day6/common/Command.class
+de/raphael/advent/year/y_2015/day6/common/Lighting.class
+de/raphael/advent/year/y_2015/day6/parts/Part2.class
+de/raphael/advent/year/y_2015/day6/Day6.class
+de/raphael/advent/year/y_2015/day6/common/Coordinate.class
+de/raphael/advent/year/y_2015/day6/parts/BasePart.class
+de/raphael/advent/year/y_2015/day6/common/ToggleLighting.class
