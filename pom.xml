@@ -11,7 +11,7 @@
 
     <modules>
         <module>core</module>
-        <module>year</module>
+        <module>years</module>
         <module>test</module>
     </modules>
 
