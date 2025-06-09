@@ -7,8 +7,6 @@ on:
 jobs:
   test-job:
     runs-on: docker
-    container:
-      image: maven:3.9.9-eclipse-temurin-24-alpine
 
     steps:
       - uses: actions/checkout@v4
