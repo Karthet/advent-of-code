@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>de.raphael.advent</groupId>
-    <artifactId>common</artifactId>
+    <artifactId>core</artifactId>
 
     <dependencies>
         <dependency>

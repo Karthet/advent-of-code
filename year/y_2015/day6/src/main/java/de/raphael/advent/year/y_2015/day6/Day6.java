@@ -1,7 +1,7 @@
 package de.raphael.advent.year.y_2015.day6;
 
-import de.raphael.advent.common.Application;
-import de.raphael.advent.common.annotation.InitializeAdvent;
+import de.raphael.advent.core.Application;
+import de.raphael.advent.core.annotation.InitializeAdvent;
 import de.raphael.advent.year.y_2015.day6.parts.Part1;
 import de.raphael.advent.year.y_2015.day6.parts.Part2;
 

@@ -1,6 +1,6 @@
 package de.raphael.advent.year.y_2015.day13.parts;
 
-import de.raphael.advent.common.Programm;
+import de.raphael.advent.core.Programm;
 import de.raphael.advent.year.y_2015.day13.common.SeatPlan;
 import lombok.extern.slf4j.Slf4j;
 

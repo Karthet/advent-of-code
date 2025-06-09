@@ -1,6 +1,6 @@
 package de.raphael.advent.test;
 
-import de.raphael.advent.common.Programm;
+import de.raphael.advent.core.Programm;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

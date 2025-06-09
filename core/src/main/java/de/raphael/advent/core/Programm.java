@@ -1,6 +1,6 @@
-package de.raphael.advent.common;
+package de.raphael.advent.core;
 
-import de.raphael.advent.common.io.Input;
+import de.raphael.advent.core.io.Input;
 
 import java.util.List;
 

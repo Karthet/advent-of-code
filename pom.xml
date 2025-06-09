@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>common</module>
+        <module>core</module>
         <module>year</module>
         <module>test</module>
     </modules>

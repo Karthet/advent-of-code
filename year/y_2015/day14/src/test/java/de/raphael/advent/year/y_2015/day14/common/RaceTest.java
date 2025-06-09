@@ -1,6 +1,6 @@
 package de.raphael.advent.year.y_2015.day14.common;
 
-import de.raphael.advent.common.io.Input;
+import de.raphael.advent.core.io.Input;
 import de.raphael.advent.test.BaseTest;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -37,6 +37,31 @@ class RaceTest extends BaseTest {
 
         // when
         var result = race.execute(1000);
+
+        // then
+        assertThat(result).isEqualTo(expected);
+
+    }
+
+    /**
+     * Given the example reindeer from above, after the first second, Dancer is in the lead and gets one point. He
+     * stays in the lead until several seconds into Comet's second burst: after the 140th second, Comet pulls into the
+     * lead and gets his first point. Of course, since Dancer had been in the lead for the 139 seconds before that, he
+     * has accumulated 139 points by the 140th second.
+     * <p>
+     * After the 1000th second, Dancer has accumulated 689 points, while poor Comet, our old champion, only has 312. So,
+     * with the new scoring system, Dancer would win (if the race ended at 1000 seconds).
+     */
+    @ParameterizedTest
+    @CsvSource({"TestCase1.txt, 689"})
+    void test_executeWithPoints(String filename, int expected) {
+
+        // given
+        var race = new Race();
+        Input.readFile(filename).forEach(race::registerReindeer);
+
+        // when
+        var result = race.executeWithPoints(1000);
 
         // then
         assertThat(result).isEqualTo(expected);

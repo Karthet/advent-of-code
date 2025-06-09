@@ -3,6 +3,7 @@ package de.raphael.advent.year.y_2015.day14.common;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
 
 @Slf4j
@@ -65,5 +66,19 @@ public class Race {
 
         });
         return leaderBoard.keySet().stream().max(Comparator.naturalOrder()).orElse(-1);
+    }
+
+    /**
+     * Run a race between the participants. Each second the participant at first place will get a point.
+     *
+     * @param duration Duration of the race.
+     * @return Longest distance run.
+     */
+    public int executeWithPoints(int duration) {
+        var max = new AtomicInteger(0);
+        for (var t = 0; t < duration; t++) {
+           max.set(participants.stream().map(p -> p.step(max.get())).max(Comparator.naturalOrder()).orElse(-1));
+        }
+        return participants.stream().map(Reindeer::getPoints).max(Comparator.naturalOrder()).orElse(-1);
     }
 }

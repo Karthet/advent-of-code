@@ -1,6 +1,6 @@
 package de.raphael.advent.year.y_2015.day2.parts;
 
-import de.raphael.advent.common.Programm;
+import de.raphael.advent.core.Programm;
 import de.raphael.advent.year.y_2015.day2.common.Logic;
 import de.raphael.advent.year.y_2015.day2.common.Present;
 

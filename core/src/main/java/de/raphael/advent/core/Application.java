@@ -1,6 +1,6 @@
-package de.raphael.advent.common;
+package de.raphael.advent.core;
 
-import de.raphael.advent.common.annotation.InitializeAdvent;
+import de.raphael.advent.core.annotation.InitializeAdvent;
 import lombok.extern.slf4j.Slf4j;
 import com.google.common.reflect.ClassPath;
 
@@ -35,7 +35,7 @@ public abstract class Application {
             log.info("[Year {}|Day {} - {}|Part 2]: {} ({}ms)", year, day, name, result2, time2);
 
         } catch (Exception ex) {
-            ex.printStackTrace();
+            log.error("Unexpected error", ex);
         }
 
     }

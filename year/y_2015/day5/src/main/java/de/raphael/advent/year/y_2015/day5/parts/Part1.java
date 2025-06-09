@@ -1,6 +1,6 @@
 package de.raphael.advent.year.y_2015.day5.parts;
 
-import de.raphael.advent.common.Programm;
+import de.raphael.advent.core.Programm;
 
 import java.util.List;
 import java.util.regex.Pattern;

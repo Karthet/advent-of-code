@@ -1,6 +1,6 @@
 package de.raphael.advent.year.y_2023.day1.parts;
 
-import de.raphael.advent.common.Programm;
+import de.raphael.advent.core.Programm;
 import de.raphael.advent.year.y_2023.day1.common.Logic;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package de.raphael.advent.year.y_2015.day4.parts;
 
-import de.raphael.advent.common.Programm;
+import de.raphael.advent.core.Programm;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.util.List;

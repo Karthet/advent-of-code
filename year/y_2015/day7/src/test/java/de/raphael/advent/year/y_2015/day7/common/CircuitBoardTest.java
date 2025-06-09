@@ -1,6 +1,6 @@
 package de.raphael.advent.year.y_2015.day7.common;
 
-import de.raphael.advent.common.io.Input;
+import de.raphael.advent.core.io.Input;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

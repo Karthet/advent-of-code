@@ -1,4 +1,4 @@
-package de.raphael.advent.common.io;
+package de.raphael.advent.core.io;
 
 import lombok.extern.slf4j.Slf4j;
 

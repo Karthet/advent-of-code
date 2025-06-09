@@ -1,6 +1,6 @@
-package de.raphael.advent.common.annotation;
+package de.raphael.advent.core.annotation;
 
-import de.raphael.advent.common.Programm;
+import de.raphael.advent.core.Programm;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
