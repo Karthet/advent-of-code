@@ -11,6 +11,6 @@
 
     <groupId>de.raphael.advent.year.y_2023</groupId>
     <artifactId>day1</artifactId>
-    <name>Day 1: Trebuchet</name>
+    <name>Day 01: Trebuchet</name>
 
 </project>

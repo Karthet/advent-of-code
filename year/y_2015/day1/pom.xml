@@ -12,6 +12,6 @@
     <groupId>de.raphael.advent.year.y_2015</groupId>
     <artifactId>day1</artifactId>
     <packaging>jar</packaging>
-    <name>Day 1: Not Quite Lisp</name>
+    <name>Day 01: Not Quite Lisp</name>
 
 </project>
