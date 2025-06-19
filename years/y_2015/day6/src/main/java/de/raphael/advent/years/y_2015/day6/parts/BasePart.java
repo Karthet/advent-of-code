@@ -1,7 +1,6 @@
 package de.raphael.advent.years.y_2015.day6.parts;
 
 import de.raphael.advent.core.Programm;
-import de.raphael.advent.year.y_2015.day6.common.*;
 import de.raphael.advent.years.y_2015.day6.common.Command;
 import de.raphael.advent.years.y_2015.day6.common.Coordinate;
 import de.raphael.advent.years.y_2015.day6.common.Instruction;
