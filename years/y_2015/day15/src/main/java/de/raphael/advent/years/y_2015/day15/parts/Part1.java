@@ -2,6 +2,7 @@ package de.raphael.advent.years.y_2015.day15.parts;
 
 import de.raphael.advent.core.Programm;
 import de.raphael.advent.years.y_2015.day15.common.Ingredient;
+import de.raphael.advent.years.y_2015.day15.common.MixtureHelper;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
@@ -27,49 +28,13 @@ import java.util.Set;
 @Slf4j
 public class Part1 extends Programm {
 
-    private final List<List<Integer>> possibleMixtures = new ArrayList<>();
+    private List<List<Integer>> possibleMixtures = new ArrayList<>();
 
     @Override
     public Object run(List<String> input) {
         var ingredients = input.stream().map(Ingredient::new).toList();
-        var list = new ArrayList<Integer>();
-        ingredients.forEach(i -> list.add(0));
-        calcValueCombinations(list, 0, 0, ingredients.size());
+        possibleMixtures = MixtureHelper.generatePossibleMixtures(ingredients.size());
         return calculateBestRecipeScore(ingredients);
-    }
-
-    private void calcValueCombinations(List<Integer> last, int number, int lastNumber, int numberOfIngredients) {
-
-        if (number >= numberOfIngredients) return;
-
-        var list = new ArrayList<>(last);
-
-        for (int i = 0; i < numberOfIngredients; i++) {
-
-            if (i == number) {
-                list.set(i, last.get(i) + 1);
-            } else {
-                if (number != lastNumber && i == lastNumber && list.stream().reduce(0, Integer::sum) >= 100) {
-                    list.set(i, last.get(i) - 1);
-                } else {
-                    list.set(i, last.get(i));
-                }
-            }
-
-        }
-
-        int sum = list.stream().reduce(0, Integer::sum);
-
-        if (sum == 100) {
-            possibleMixtures.add(list);
-        }
-
-        if (sum < 100) {
-            for (int i = 0; i < numberOfIngredients; i++) {
-                calcValueCombinations(list, number + i, number, numberOfIngredients);
-            }
-        }
-
     }
 
     private int calculateBestRecipeScore(List<Ingredient> ingredients) {

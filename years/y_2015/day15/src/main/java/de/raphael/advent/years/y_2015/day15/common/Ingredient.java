@@ -39,4 +39,8 @@ public class Ingredient {
        return texture * amount;
    }
 
+    public int calcCalories() {
+        return calories * amount;
+    }
+
 }
