@@ -1,6 +1,7 @@
 package de.raphael.advent.years.y_2015.day16.parts;
 
 import de.raphael.advent.core.Programm;
+import de.raphael.advent.years.y_2015.day16.Day16;
 import de.raphael.advent.years.y_2015.day16.common.Sue;
 import de.raphael.advent.years.y_2015.day16.mapper.Input2SueMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -52,16 +53,15 @@ import java.util.List;
 @Slf4j
 public class Part1 extends Programm {
 
-    Sue theOneAndOnly = new Sue(0,3,7,2,3,0,0,5,3,2,1);
-
     @Override
     public Object run(List<String> input) {
-        return determineCorrectSue(theOneAndOnly, input.stream().map(Input2SueMapper::map).toList());
+        return determineCorrectSue(input.stream().map(Input2SueMapper::map).toList());
     }
 
-    private int determineCorrectSue(Sue sue, List<Sue> sues) {
+    private int determineCorrectSue(List<Sue> sues) {
+        var sue = Day16.theOneAndOnly;
         var possibleSues = sues.stream().filter(s -> {
-            var correct = false;
+            var correct = true;
             if (s.children() != null) {
                 correct = s.children().equals(sue.children());
             }
